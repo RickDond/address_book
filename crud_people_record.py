@@ -173,6 +173,6 @@ class My_People_Record(Toplevel):
             else:
                 messagebox.showerror("Error", "Fields cannot be empty")
         if success:
-            my_people_wd = my_people.My_People()
             connection.commit()
+            my_people_wd = my_people.My_People()
             self.destroy()

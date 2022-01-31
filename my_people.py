@@ -72,30 +72,34 @@ class My_People(Toplevel):
             self.tv_people.insert('','end', values=(p[0], p[1], p[2]))
 
     def add_record(self):
-        mpr = crud_people_record.My_People_Record('C')
         self.destroy()
+        mpr = crud_people_record.My_People_Record('C')
+
 
     def update_record(self):
 
         seleccion = self.tv_people.item(self.tv_people.focus())
         if seleccion.get('values'):
             user_id = seleccion['values'][0]
-            mpr = crud_people_record.My_People_Record('U', user_id)
             self.destroy()
+            mpr = crud_people_record.My_People_Record('U', user_id)
+
 
 
     def view_record(self):
         seleccion = self.tv_people.item(self.tv_people.focus())
         if seleccion.get('values'):
             user_id = seleccion['values'][0]
-            mpr = crud_people_record.My_People_Record('D', user_id)
             self.destroy()
+            mpr = crud_people_record.My_People_Record('D', user_id)
+
 
 
     def delete_record(self):
         seleccion = self.tv_people.item(self.tv_people.focus())
         if seleccion.get('values'):
             user_id = seleccion['values'][0]
-            mpr = crud_people_record.My_People_Record('R', user_id)
             self.destroy()
+            mpr = crud_people_record.My_People_Record('R', user_id)
+
 
