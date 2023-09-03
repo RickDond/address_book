@@ -70,8 +70,28 @@ class About(Toplevel):
         self.frame.pack(fill=X)
         text = "This application is for Educational Purposes"
         self.title_lbl = Label(self.frame, text=text, bg='blue',
-                               font='Arial 12 bold', fg='red')
+                               font='Arial 12 bold', fg='white')
         self.title_lbl.place(x=100,y=100)
+        text2 = "Technology stack used: "
+        self.title_lbl = Label(self.frame, text=text2, bg='blue',
+                               font='Arial 12 bold', fg='white')
+        self.title_lbl.place(x=100, y=150)
+        text3 = "* Front: Python Lybrary: Tkinter"
+        self.title_lbl = Label(self.frame, text=text3, bg='blue',
+                               font='Arial 12 bold', fg='white')
+        self.title_lbl.place(x=200, y=200)
+        text4 = "* Back: Python"
+        self.title_lbl = Label(self.frame, text=text4, bg='blue',
+                               font='Arial 12 bold', fg='white')
+        self.title_lbl.place(x=200, y=250)
+        text5 = "* Database: Sqlite"
+        self.title_lbl = Label(self.frame, text=text5, bg='blue',
+                               font='Arial 12 bold', fg='white')
+        self.title_lbl.place(x=200, y=300)
+        text6 = "* Dev IDE: Pycharm"
+        self.title_lbl = Label(self.frame, text=text6, bg='blue',
+                               font='Arial 12 bold', fg='white')
+        self.title_lbl.place(x=200, y=350)
 
 def main():
     root = Tk()
